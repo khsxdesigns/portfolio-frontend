@@ -1,42 +1,21 @@
-import React from "react"  
+import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 
-import Layout from "../components/layout"  
-import ProjectsComponent from "../components/projects"
+import Layout from "../layouts/primary"
+import Hero from "../pages/screens/home/hero"
+import WhoWeAre from "../pages/screens/home/what-i-do"
+import Services from "../pages/screens/home/services"
+import Help from "../components/help"
+import Projects from "./screens/home/case-studies"
+import Processes from "./screens/home/process"
 
-import "../assets/css/main.css"
-
-const IndexPage = () => (  
+const IndexPage = () => (
   <Layout>
-    <StaticQuery
-      query={graphql`
-        query {
-          allStrapiProject {
-            edges {
-              node {
-                strapiId
-                title
-                category {
-                  name
-                }
-                image {
-                  publicURL
-                }
-              }
-            }
-          }
-        }
-      `}
-      render={data => (
-        <div className="uk-section">
-          <div className="uk-container uk-container-large">
-            <h1>Strapi blog</h1>
-            <ProjectsComponent projects={data.allStrapiProject.edges} />
-          </div>
-        </div>
-      )}
-    />
+    <Hero />
+    {/* <Services /> */}
+    <Processes />
+    <Projects />
   </Layout>
 )
 
-export default IndexPage  
+export default IndexPage

@@ -3,20 +3,20 @@ import { Link } from "gatsby"
 
 const Card = ({ project }) => {  
   return (
-    <Link to={`/project/${project.node.strapiId}`} className="uk-link-reset">
-      <div className="uk-card uk-card-muted">
-        <div className="uk-card-media-top">
+    <Link to={`/project/${project.node.strapiId}`}>
+      <div>
+        <div>
           <img
             src={project.node.image.publicURL}
             alt={project.node.image.publicURL}
             height="100"
           />
         </div>
-        <div className="uk-card-body">
-          <p id="category" className="uk-text-uppercase">
+        <div>
+          <p id="category">
             {project.node.category.name}
           </p>
-          <p id="title" className="uk-text-large">
+          <p id="title">
             {project.node.title}
           </p>
         </div>

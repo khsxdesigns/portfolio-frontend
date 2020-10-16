@@ -1,10 +1,10 @@
-require("dotenv").config({  
+require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-module.exports = {  
+module.exports = {
   siteMetadata: {
-    title: "My super blog",
+    title: "Kerrie Hui - Product Designer",
     description: "Gatsby blog with Strapi",
     author: "Strapi team",
   },
@@ -14,7 +14,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/assets/images`,
       },
     },
     {
@@ -43,6 +43,27 @@ module.exports = {
       },
     },
     "gatsby-plugin-offline",
-    "gatsby-plugin-sass"
+    "gatsby-plugin-sass",
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /svg/,
+        },
+      },
+    },
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Work Sans",
+              variants: ["300", "400", "500", "700"],
+            },
+          ],
+        },
+      },
+    },
   ],
 }

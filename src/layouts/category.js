@@ -1,10 +1,10 @@
-import React from "react"  
+import React from "react"
 import { graphql } from "gatsby"
 
-import ProjectsComponent from "../components/projects"  
-import Layout from "../components/layout"
+import ProjectsComponent from "../components/projects"
+import Layout from "../layouts/primary"
 
-export const query = graphql`  
+export const query = graphql`
   query Category($id: Int!) {
     projects: allStrapiProject(filter: { category: { id: { eq: $id } } }) {
       edges {
@@ -26,14 +26,14 @@ export const query = graphql`
   }
 `
 
-const Category = ({ data }) => {  
+const Category = ({ data }) => {
   const projects = data.projects.edges
   const category = data.category.name
 
   return (
     <Layout>
-      <div className="uk-section">
-        <div className="uk-container uk-container-large">
+      <div>
+        <div>
           <h1>{category}</h1>
           <ProjectsComponent projects={projects} />
         </div>
@@ -42,4 +42,4 @@ const Category = ({ data }) => {
   )
 }
 
-export default Category  
+export default Category

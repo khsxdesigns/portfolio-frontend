@@ -8,7 +8,7 @@ const ProjectsComponent = ({ projects }) => {
 
   return (
     <div>
-      <div className="uk-child-width-1-2" data-uk-grid>
+      <div>
         <div>
           {leftprojects.map((project, i) => {
             return (
@@ -17,7 +17,7 @@ const ProjectsComponent = ({ projects }) => {
           })}
         </div>
         <div>
-          <div className="uk-child-width-1-2@m uk-grid-match" data-uk-grid>
+          <div>
             {rightprojects.map((project, i) => {
               return (
                 <Card project={project} key={`project__${project.node.id}`} />
