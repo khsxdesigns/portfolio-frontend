@@ -24,6 +24,7 @@ import Iterate from "../../../assets/images/svg/iterate.svg"
 import ImageHere from "../../../assets/images/test.png"
 import Research from "../../../assets/images/research.png"
 import DesignImage from "../../../assets/images/design.jpg"
+import BuildImage from "../../../assets/images/build.jpg"
 import TestImage from "../../../assets/images/test.jpg"
 
 const StyledContainer = styled(Container)`
@@ -494,7 +495,7 @@ const Processes = () => {
             subtitle="Build"
             title="Agile, scrum, get it done"
             description="I have several years of experience working inside and alongside agile teams. My goal is to eliminate the separation between design and development by speaking the same language (I'm a designer who can code!), help strengthen empathy and human-centered design capabilities, and to deliver innovative experiences. "
-            imageUrl={ImageHere}
+            imageUrl={BuildImage}
             icon={<Test />}
           />
 

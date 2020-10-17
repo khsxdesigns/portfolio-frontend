@@ -11,8 +11,10 @@ import ContextConsumer from "../context"
 import Container from "../container"
 
 // Images
-
 import FullLogo from "../../assets/images/svg/logo.svg"
+import Behance from "../../assets/images/svg/logo-behance.svg"
+import Dribbble from "../../assets/images/svg/logo-dribbble.svg"
+import LinkedIn from "../../assets/images/svg/logo-linkedin.svg"
 
 const StyledContainer = styled(Container)`
   display: flex;
@@ -224,7 +226,14 @@ const StyledMenu = styled.nav`
         svg {
           width: 22px;
           height: auto;
+          fill: ${colors.white}
         }
+
+        &:hover{
+
+          svg{
+            fill: ${colors.supernova}
+          }}
       }
     }
   }
@@ -426,38 +435,32 @@ class Menu extends React.Component {
                 </ul>
 
                 <div className="menu__social-links">
-                  {/* <a
-                    aria-label="Instagram"
-                    href="https://www.instagram.com/indiciusar/"
+                  <a
+                    href="https://www.behance.net/kerriehui?tracking_source=search_users_recommended%7Ckerrie%20hui"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Medium"
                   >
-                    <Instagram />
+                    <Behance />
                   </a>
+
                   <a
-                    aria-label="LinkedIn"
-                    href="https://www.linkedin.com/company/indicius/?originalSubdomain=ar"
+                    href="https://dribbble.com/kerriehui"
                     target="_blank"
                     rel="noopener noreferrer"
-                  >
-                    <LinkedIn />
-                  </a>
-                  <a
                     aria-label="Dribbble"
-                    href="https://dribbble.com/Indicius"
-                    target="_blank"
-                    rel="noopener noreferrer"
                   >
                     <Dribbble />
                   </a>
+
                   <a
-                    aria-label="Medium"
-                    href="https://medium.com/@Indicius"
+                    href="https://linkedin.com/in/kerriehui"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="LinkedIn"
                   >
-                    <Medium />
-                  </a> */}
+                    <LinkedIn />
+                  </a>
                 </div>
               </div>
             </div>

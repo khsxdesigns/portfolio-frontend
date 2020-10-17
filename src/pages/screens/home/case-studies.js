@@ -17,8 +17,6 @@ import Button from "../../../components/button/"
 // Icons
 import Arrow from "../../../assets/images/svg/keyboard-arrow-right.svg"
 
-import ImageHere from "../../../assets/images/test.png"
-
 const StyledProjects = styled.section`
   padding-bottom: 64px;
   padding-top: 64px;
@@ -27,6 +25,10 @@ const StyledProjects = styled.section`
     padding-bottom: 80px;
     padding-bottom: 80px;
   `}
+
+  .subtitle {
+    margin: 32px auto 0 auto;
+  }
 
   .see-more {
     margin: 32px auto 0 auto;

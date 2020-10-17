@@ -9,13 +9,32 @@ import Help from "../components/help"
 import Projects from "./screens/home/case-studies"
 import Processes from "./screens/home/process"
 
-const IndexPage = () => (
-  <Layout>
-    <Hero />
-    {/* <Services /> */}
-    <Processes />
-    <Projects />
-  </Layout>
-)
+const IndexPage = ({ data: { strapiHome } }) => {
+  const { content, section } = strapiHome
+
+  const heroProps = {
+    content: content,
+    section: section,
+  }
+
+  return (
+    <Layout>
+      <Hero {...heroProps} />
+      {/* <Services /> */}
+      <Processes />
+      <Projects />
+    </Layout>
+  )
+}
 
 export default IndexPage
+
+export const query = graphql`
+  {
+    strapiHome {
+      content
+      section
+      id
+    }
+  }
+`
