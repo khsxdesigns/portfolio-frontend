@@ -1058,27 +1058,27 @@ textarea {
  -webkit-appearance:none;
  border-radius:0
 }
-[data-aos=indicius-fade-in] {
+[data-aos=khsx-fade-in] {
  opacity:0
 }
-[data-aos=indicus-fade-in].aos-animate {
+[data-aos=khsx-fade-in].aos-animate {
  opacity:1
 }
-[data-aos=indicius-slide-right] {
+[data-aos=khsx-slide-right] {
  transform:translateX(-80px)
 }
-[data-aos=indicius-slide-right].aos-animate {
+[data-aos=khsx-slide-right].aos-animate {
  transform:translateX(0)
 }
-[data-aos=indicius-slide-left] {
+[data-aos=khsx-slide-left] {
  transform:translateX(80px)
 }
-[data-aos=indicius-slide-left].aos-animate {
+[data-aos=khsx-slide-left].aos-animate {
  transform:translateX(0)
 }
-[data-aos=indicius-slide-top] {
+[data-aos=khsx-slide-top] {
  transform:translateY(80px)
 }
-[data-aos=indicius-slide-top].aos-animate {
+[data-aos=khsx-slide-top].aos-animate {
  transform:translateY(0)
 }
