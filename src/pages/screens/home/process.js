@@ -117,7 +117,7 @@ const StyledProcesses = styled.section`
     `}
 
     ${breakpoint.large`
-      left: calc(((100vw - 800px) / 2) - 122px);
+      left: calc(((100vw - 800px) / 2) - 128px);
     `}
   }
 `

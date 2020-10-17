@@ -4,9 +4,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Kerrie Hui - Product Designer",
-    description: "Gatsby blog with Strapi",
-    author: "Strapi team",
+    title: "Kerrie Hui",
+    description: "Portfolio for Sydney-based UX/Product designer Kerrie Hui",
+    author: "Kerrie Hui",
   },
   plugins: [
     "gatsby-plugin-no-sourcemaps",

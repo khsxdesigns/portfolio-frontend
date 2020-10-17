@@ -425,7 +425,7 @@ class Menu extends React.Component {
                   <li>
                     <Link
                       onClick={this.closeMenu}
-                      to="/contact"
+                      href="mailto:khsxdesigns@gmail.com"
                       activeClassName="active"
                       partiallyActive={true}
                     >
