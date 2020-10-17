@@ -1,3 +1,11 @@
+// exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
+//   if (getConfig().mode === "production") {
+//     actions.setWebpackConfig({
+//       devtool: false,
+//     })
+//   }
+// }
+
 // exports.createPages = async ({ graphql, actions }) => {
 //   const { createPage } = actions
 //   const result = await graphql(
