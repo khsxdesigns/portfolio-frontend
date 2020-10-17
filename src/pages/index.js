@@ -6,18 +6,10 @@ import Hero from "../pages/screens/home/hero"
 import Projects from "./screens/home/case-studies"
 import Processes from "./screens/home/process"
 
-const IndexPage = ({ data: { strapiHome } }) => {
-  const { content, section } = strapiHome
-
-  const heroProps = {
-    content: content,
-    section: section,
-  }
-
+const IndexPage = () => {
   return (
     <Layout>
-      <Hero {...heroProps} />
-      {/* <Services /> */}
+      <Hero />
       <Processes />
       <Projects />
     </Layout>
@@ -25,13 +17,3 @@ const IndexPage = ({ data: { strapiHome } }) => {
 }
 
 export default IndexPage
-
-export const query = graphql`
-  {
-    strapiHome {
-      content
-      section
-      id
-    }
-  }
-`

@@ -67,6 +67,7 @@ const StyledMenu = styled.nav`
 
     svg {
       width: 32px;
+      height: 32px;
       * {
         fill: ${props => (props.dark ? colors.midnight : null)};
 
